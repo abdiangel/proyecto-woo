@@ -9,13 +9,13 @@
 
 module.exports = {
 	// Project options.
-	projectURL: "wpgulp.local", // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
+	projectURL: "localhost/proyecto", // Local project URL of your already running WordPress site. Could be something like wpgulp.local or localhost:3000 depending upon your local WordPress setup.
 	productURL: "./", // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 	browserAutoOpen: false,
 	injectChanges: true,
 
 	// Style options.
-	styleSRC: "./assets/css/style.scss", // Path to main .scss file.
+	styleSRC: "./assets/sass/style.scss", // Path to main .scss file.
 	styleDestination: "./", // Path to place the compiled CSS file. Default set to root folder.
 	outputStyle: "compact", // Available options → 'compact' or 'compressed' or 'nested' or 'expanded'
 	errLogToConsole: true,
