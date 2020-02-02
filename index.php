@@ -17,43 +17,83 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+    <!------------------------------------------------------------------------------------------>
+    <!--Carousel-->
+    <!------------------------------------------------------------------------------------------>
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators custom-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/plantilla1.png" alt="First slide">
+        <div class="carousel-caption">
+          <div class="carousel__items">
+            <h2 class="carousel__items-title">Kit de Papelería Empresarial</h2>
+            <p class="carousel__items-description">Todas las comunicaciones de tu empresa deben apoyarse en una papelería corporativa profesional que ayude a rear una marca fuerte.</p>
+            <a href="" class="carousel__button">Ver más</a>
+          </div>
+          <div class="carousel__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/papeleria1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/plantilla2.png" alt="Second slide">
+        <div class="carousel-caption">
+          <div class="carousel__items">
+            <h2 class="carousel__items-title">Tarjetas traslúcidas</h2>
+            <p class="carousel__items-description">Dale una presentación más sofisticada a tu empresa y diferenciate de las demás. Impresión sobre poliestireno translúcido con tintas uv.</p>
+            <a href="" class="carousel__button">Ver más</a>
+          </div>
+          <div class="carousel__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/tarjetas2.png" alt="Tarjetas traslúcidas">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/plantilla3.png" alt="Third slide">
+        <div class="carousel-caption">
+          <div class="carousel__items">
+            <h2 class="carousel__items-title">Diseño gráfico personalizado</h2>
+            <p class="carousel__items-description">Contamos con profesionales del diseño para que tus impresos sean estéticos y con alta calidad visual.</p>
+            <a href="" class="carousel__button">Ver más</a>
+          </div>
+          <div class="carousel__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/diseño3.png" alt="Diseño gráfico personalizado">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/plantilla4.png" alt="Fourth slide">
+        <div class="carousel-caption">
+          <div class="carousel__items">
+            <h2 class="carousel__items-title">Productos promocionales</h2>
+            <p class="carousel__items-description">Innovadores para el posicionamiento, fidelización y recordación de tu marca.</p>
+            <a href="" class="carousel__button">Ver más</a>
+          </div>
+          <div class="carousel__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/SLIDER/productos4.png" alt="Productos promocionales">
+          </div>
+        </div>
+      </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	sadasd
 
 <?php
-get_sidebar();
 get_footer();

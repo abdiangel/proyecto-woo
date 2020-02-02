@@ -1,0 +1,174 @@
+.header {
+  background-color: white;
+  z-index: 10;
+  
+  @media (max-width:850px) {
+    display: none;
+  }
+
+  &__bluebar {
+    width: 100%;
+    height: 2.5rem;
+    background: rgb(47, 128, 209);
+    background: radial-gradient(
+      circle,
+      rgba(47, 128, 209, 1) 0%,
+      rgba(61, 56, 162, 1) 0%,
+      rgba(56, 143, 161, 1) 100%
+    );
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__bluebar-el {
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: bolder;
+    margin-right: 1rem;
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  //Main wrapper
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  //Logo
+  &__logo {
+    img {
+      width: 30rem;
+    }
+  }
+
+  //Productos y barra de busqueda
+  &__products {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  &__productsBtn img {
+    width: 4rem;
+  }
+
+  &__searchBar {
+    img {
+      width: 290px;
+    }
+  }
+
+  //Detalles de cuenta
+
+  &__details {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid $color-grey-light;
+    height: 7rem;
+    padding: 0 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  &__detailsUser {
+    color: red;
+    display: flex;
+    flex-wrap: nowrap;
+
+    img {
+      width: 4rem;
+    }
+  }
+
+  &__detailsUserSignIn {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+
+    > span:not(:last-child) {
+      display: block;
+      color: $color-grey-light;
+      font-weight: bolder;
+    }
+
+    > span:last-child {
+      font-size: 0.8rem;
+      border-bottom: 1px solid black;
+    }
+  }
+
+  //Subir archivos
+  &__detailsUpload {
+    margin-left: 0.5rem;
+    padding: 1rem 1rem;
+    border-left: 1px solid $color-grey-light;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > span {
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: bold;
+    }
+
+    img {
+      width: 6rem;
+    }
+  }
+
+  //Soporte
+  &__detailsHelp {
+    margin-left: 0.5rem;
+    padding: 1rem 1rem;
+    border-left: 1px solid $color-grey-light;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > span {
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: bold;
+    }
+
+    img {
+      width: 5rem;
+    }
+  }
+
+  //Carrito de compras
+
+  &__detailsShoppingCart {
+    margin-left: 0.5rem;
+    padding: 1rem 1rem;
+    border-left: 1px solid $color-grey-light;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > span {
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: bold;
+    }
+
+    img {
+      width: 4rem;
+    }
+  }
+
+  //Entregas express
+  &__delivery {
+    > img {
+      width: 100%;
+    }
+  }
+}

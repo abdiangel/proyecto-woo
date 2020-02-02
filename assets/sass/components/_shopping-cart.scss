@@ -1,0 +1,227 @@
+.shopping-cart {
+  margin-top: 2rem;
+  &__title {
+    display: inline;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: bolder;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  &__count {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    background-color: #c2e7f4;
+    padding: 1rem;
+
+    @media (max-width:770px) {
+      flex-direction: column;
+    }
+
+    @media (min-width:1024px) {
+      padding: 1rem 2rem;
+    }
+}
+
+  &__box {
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  &__boxEl {
+    @media (min-width:770px) {
+      width: 20rem;
+    }
+  }
+
+  &__productImg {
+    text-align: center;
+    img {
+      width: 20rem;
+    }
+  }
+
+  &__productName {
+    font-weight: bolder;
+    margin-top: 2rem;
+  }
+
+  &__productDescription {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__addBtn {
+    padding: 1rem 1rem;
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+    width: 12rem;
+
+    @media (max-width:770px) {
+      width: 100%;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__removeBtn {
+    padding: 1rem 1rem;
+    background-color: $color-secondary;
+    color: $color-white;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: block;
+    width: 12rem;
+    margin-top: 0.5rem;
+
+    @media (max-width:770px) {
+      width: 100%;
+    }
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__productInfo {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    margin: 1.2rem 0;
+    background-color: white;
+    border-radius: 0.3rem;
+
+    @media (max-width:770px) {
+      font-size: 1.3rem;
+    }
+
+    b {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__cartInfoCont {
+    border-left: 1px solid $color-grey-medium;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__cartInfo {
+    display: block;
+    padding: 0.2rem;
+    margin: 2rem 0;
+    border-bottom: 1px solid $color-grey-medium;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__totalCont {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  &__totalBox {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+
+    @media (max-width:770px) {
+      width: 100%;
+    }
+
+    > span {
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: $color-white;
+      font-style: italic;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__totalRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
+    span {
+      display: block;
+      font-size: 1.4rem;
+      color: $color-white;
+      font-style: italic;
+      margin-left: 0.5rem;
+      font-weight: bolder;
+    }
+
+    p {
+      color: $color-white;
+    }
+  }
+
+  &__pay {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__payBtn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: $color-secondary;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+
+    @media (max-width:770px) {
+      width: 100%;
+    }
+
+    a {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $color-white;
+      font-weight: bolder;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

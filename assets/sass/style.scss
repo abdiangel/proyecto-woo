@@ -1,9 +1,8 @@
 /*!
-Theme Name: Proyecto
+Theme Name: Graphic City WooCommerce
 Theme URI: http://underscores.me/
 Author: Alchlab SAC
-Author URI: http://underscores.me/
-Description: Proyecto website
+Author URI: http://alchlab.com/
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -13,103 +12,50 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Proyecto is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Graphic City WooCommerce is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
+# Abstracts
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
 
 /*--------------------------------------------------------------
-# Normalize
+# Globals
 --------------------------------------------------------------*/
-@import "normalize";
+@import "global/animations";
+@import "global/base";
+@import "global/typography";
+@import "global/utilities";
 
 /*--------------------------------------------------------------
-# Typography
+# Components
 --------------------------------------------------------------*/
-@import "typography/typography";
+@import "components/backdrop";
+@import "components/refactorize";
+@import "components/products-slider";
+@import "components/main-form";
+@import "components/main-info";
+@import "components/shopping-cart";
+@import "components/products";
+@import "components/megamenu";
+@import "components/search";
+@import "components/carousel";
 
 /*--------------------------------------------------------------
-# Elements
+# Layout
 --------------------------------------------------------------*/
-@import "elements/elements";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
 
 /*--------------------------------------------------------------
-# Forms
+# Home
 --------------------------------------------------------------*/
-@import "forms/forms";
+@import "pages/home";
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
 
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
-
-h1 {
-	color: red;
-}
-
-a:visited,
-a:link {
-	color: orangered;
-}

@@ -1,0 +1,250 @@
+.search-results {
+    background-color: #c2e7f46e;
+}
+
+.search {
+    
+    &__title {
+        background-color: $color-secondary;
+        width: 20rem;
+        text-align: center;
+        padding: .5rem 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        color: $color-white;
+        font-style: italic;
+        font-weight: bolder;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+    }
+
+    &__recent {
+        border-radius: 2rem;
+        -webkit-box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        -moz-box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        width: 100%;
+        padding: 2rem;
+        margin: 1rem;
+        position: relative;
+        margin-top: 2rem;
+        background-color: $color-white;
+    }
+
+    &__recent-title {
+        font-size: 1.2rem;
+        color: $color-grey-dark;
+        font-weight: bold;
+        display: block;
+    }
+
+    &__recent-elements {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            color: $color-secondary;
+            padding: .5rem 1rem;
+            border: 1px solid $color-secondary;
+            font-size: 1.3rem;
+            margin: .5rem;
+            border-radius: .5rem;
+            text-transform: uppercase;
+            transition: all .3s;
+            
+            &:hover {
+                text-decoration: none;
+                color: $color-white;
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    &__flex-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__pagination-titleSec {
+        color: $color-secondary;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: .5rem;
+    }
+
+    &__pagination-order {
+        label {
+            font-size: 1.2rem;
+            color: $color-grey-dark;
+            font-weight: bold;
+            display: block;
+        }
+    }
+
+    &__pagination-select {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #dadada;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 1rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    
+    &__pagination-title {
+        font-size: 1.2rem;
+        color: $color-grey-dark;
+        font-weight: bold;
+        display: block;
+    }
+    
+    &__pagination-elements {
+        margin-top: 1rem;
+
+        img {
+            width: 1.5rem;
+        }
+
+        a:not(:last-child) {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid $color-primary;
+            border-radius: 50%;
+            height: 3rem;
+            width: 3rem;
+            background-color: $color-white;
+            color: $color-primary;
+            font-weight: bolder;
+            font-size: 1rem;
+            margin-right: .5rem;
+            
+            @media (max-width:400px) {
+                height: 2rem;
+                width: 2rem;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: $color-white;
+                background-color: $color-secondary;
+                border: 1.5px solid $color-secondary;
+            }
+        }
+    }
+    
+    &__pagination-box {
+        border-radius: 2rem;
+        -webkit-box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        -moz-box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        width: 100%;
+        padding: 2rem;
+        margin: 1rem;
+        margin-top: 3rem;
+        background-color: $color-white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__products {
+        padding: 2rem;
+        margin: 3rem 1rem;
+        width: 100%;
+        border-radius: 2rem;
+        -webkit-box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        -moz-box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        box-shadow: 10px 10px 30px -9px rgba(0, 0, 0, 0.49);
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $color-white;
+    }
+
+    &__product {
+        width: 25%;
+        margin-top: 2rem;
+        padding: .5rem;
+
+        @media (max-width:800px) {
+            width: 33.3%;
+        }
+
+        @media (max-width:600px) {
+            width: 50%;
+        }
+
+        @media (max-width:450px) {
+            width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: 20rem;
+            border: 1px solid $color-grey-medium;
+
+            @media (max-width:450px) {
+                height: 30rem;
+            }
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+            font-weight: bolder;
+            width: 100%;
+        }
+    }
+
+    &__product-description {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-weight: bolder;
+            color: $color-primary;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-weight: bolder;
+            color: $color-grey-dark;
+        }
+    }
+
+    &__product-button {
+        background-color: $color-primary;
+        border-radius: 2px;
+        padding: .2rem 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $color-secondary;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        a  {
+            text-transform: uppercase;
+            color: $color-white;
+            transition: all .3s;
+
+            &:hover {
+                color: $color-white;
+                text-decoration: none;
+                font-weight: bolder;
+            }
+        }
+    }
+}

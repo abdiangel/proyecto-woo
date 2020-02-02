@@ -1,5 +1,12 @@
 "use strict";
 
+(function ($) {
+  $("#carousel").carousel({
+    interval: false
+  });
+})(jQuery);
+"use strict";
+
 /**
  * File customizer.js.
  *
