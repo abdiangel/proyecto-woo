@@ -242,11 +242,17 @@ ul{margin-bottom:0 !important}
 }@media(max-width:1000px) and (min-width:900px){.main-form{height:37rem}
 .footer{height:25rem}
 }@media(min-width:1024px){.shopping-cart__wrapper{padding:1rem 2rem}
+.carousel__items h2{font-size:3rem}
 }@media(min-width:1400px){.main-form{height:50rem}
-}@media(max-width:900px){.footer{background-color:#0086ca;background-image:none}
+.carousel__img img{width:45rem;top:-3.5rem}
+}@media(max-width:1600px){.carousel-caption{bottom:140px}
+}@media(max-width:1100px){.carousel-caption{bottom:80px}
+}@media(max-width:900px){.carousel__items p{width:45%;font-size:1rem}
+.footer{background-color:#0086ca;background-image:none}
 }@media(max-width:850px){.main-form{display:none}
 .header{display:none}
 }@media(max-width:800px){.search__product{width:33.3%}
+.carousel-caption{bottom:40px}
 }@media(max-width:770px){.shopping-cart__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .shopping-cart__addBtn{width:100%}
 .shopping-cart__removeBtn{width:100%}
@@ -255,9 +261,18 @@ ul{margin-bottom:0 !important}
 .shopping-cart__payBtn{width:100%}
 .footer{display:none}
 .resp-footer{display:block}
+}@media(max-width:700px){.carousel__img img{width:20rem}
+.carousel__items h2{font-size:2rem}
+.carousel__items p{margin:1rem 0}
+.carousel .carousel__button{padding:.5rem 1rem;font-size:1rem}
 }@media(max-width:600px){.product-box__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .product-box__setting{display:inline-block}
 .search__product{width:50%}
+.carousel-caption{bottom:20px}
+}@media(max-width:580px){.carousel__items h2{font-size:1.2rem}
+}@media(max-width:500px){.carousel-caption{bottom:0}
+.carousel__img img{width:15rem}
+.carousel__items p{font-size:.8rem}
 }@media(max-width:450px){.products-slider__button a{font-size:1.1rem}
 .main-info__itemWrapper{margin-top:0}
 .main-info__item h4{font-size:1.1rem;font-weight:bolder}
@@ -268,6 +283,10 @@ ul{margin-bottom:0 !important}
 .search__product{width:100%}
 .search__product img{height:30rem}
 }@media(max-width:400px){.search__pagination-elements a:not(:last-child){height:2rem;width:2rem}
+}@media(max-width:360px){.carousel-caption{bottom:-10px}
+.carousel__img img{width:12rem}
+.carousel__items h2{font-size:1rem}
+.carousel__items p{font-size:.6rem}
 }@media only screen and (max-width:75em){html{font-size:56.25%}
 }@media only screen and (max-width:56.25em){html{font-size:50%}
 .u-margin-bottom-medium{margin-bottom:3rem !important}

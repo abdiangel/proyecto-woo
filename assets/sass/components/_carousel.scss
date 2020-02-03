@@ -9,7 +9,31 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    text-align: initial;
+	text-align: initial;
+	
+	@media (max-width:1600px) {
+		bottom: 140px;
+	}
+
+	@media (max-width:1100px) {
+		bottom: 80px;
+	}
+
+	@media (max-width:800px) {
+		bottom: 40px;
+	}
+
+	@media (max-width:600px) {
+		bottom: 20px;
+	}
+
+	@media (max-width:500px) {
+		bottom: 0px;
+	}
+
+	@media (max-width:360px) {
+		bottom: -10px;
+	}
 }
 
 .carousel {
@@ -20,6 +44,23 @@
 			position: absolute;
 			right: 0rem;
 			top: 1.5rem;
+
+			@media (max-width:700px) {
+				width: 20rem;
+			}
+
+			@media (max-width:500px) {
+				width: 15rem;
+			}
+
+			@media (max-width:360px) {
+				width: 12rem;
+			}
+
+			@media (min-width:1400px) {
+				width: 45rem;
+				top: -3.5rem;
+			}
 		}
 	}
 
@@ -28,6 +69,21 @@
 			color: $color-tertiary;
 			font-weight: bolder;
 			font-size: 2.5rem;
+			@media (max-width:700px) {
+				font-size: 2rem;
+			}
+
+			@media (max-width:580px) {
+				font-size: 1.2rem;
+			}
+
+			@media (max-width:360px) {
+				font-size: 1rem;
+			}
+
+			@media (min-width:1024px) {
+				font-size: 3rem;
+			}
 		}
 		
 		p {
@@ -36,6 +92,23 @@
 			color: white;
 			font-weight: bolder;
 			margin: 2rem 0;
+
+			@media (max-width:700px) {
+				margin: 1rem 0;
+			}
+
+			@media (max-width:900px) {
+				width: 45%;
+				font-size: 1rem;
+			}
+
+			@media (max-width:500px) {
+				font-size: .8rem;
+			}
+
+			@media (max-width:360px) {
+				font-size: .6rem;
+			}
 		}
 	}
 
@@ -51,6 +124,11 @@
 		font-size: 1.2rem;
 		border-radius: .4rem;
 		transition: all .3s;
+
+		@media (max-width:700px) {
+			padding: .5rem 1rem;
+			font-size: 1rem;
+		}
 
 		&:hover {
 			color: $color-tertiary;
