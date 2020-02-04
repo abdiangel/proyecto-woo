@@ -30,6 +30,15 @@
 
   &__contact {
     margin-top: 25%;
+    position: relative;
+  }
+
+  &__background {
+
+    img {
+      width: 100%;
+      position: absolute;
+    }
   }
 }
 
@@ -38,4 +47,12 @@
 .btn-custom {
   text-transform: uppercase;
   font-weight: bolder !important;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: 2px solid $color-secondary;
+  border-radius: .3rem;
+  color: $color-white;
+  font-weight: bold;
+  font-size: 1rem;
 }

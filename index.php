@@ -91,6 +91,29 @@ get_header();
       </a>
   </div>
 
+  <div class="main-form">
+  <div class="main-form__background">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/HOME/formbackground.png" alt="">
+  </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="main-form__text">
+              <span>Déjanos tus datos si <b>requieres cotizar un trabajo personalizado</b>, contactar con un asesor o
+                recibir
+                información sobre descuentos.</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="main-form__contact">
+              <?php echo do_shortcode( '[contact-form-7 id="34" title="Formulario de contacto index"]' ); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	sadasd
